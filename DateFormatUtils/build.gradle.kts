@@ -58,7 +58,7 @@ publishing {
 
             groupId = "io.github.devvillar"
             artifactId = "dateutils"
-            version = "1.0.1"
+            version = "1.0.2"
 
             artifact("${layout.buildDirectory.get().asFile}/outputs/aar/DateFormatUtils-release.aar")
 
