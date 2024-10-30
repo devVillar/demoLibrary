@@ -99,6 +99,7 @@ publishing {
 
     repositories {
         maven {
+
             name = "GithubPackages"
             url = uri("https://maven.pkg.github.com/devVillar/demoLibrary")
             credentials {
