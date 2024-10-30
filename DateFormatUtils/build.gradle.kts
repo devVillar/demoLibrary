@@ -102,8 +102,8 @@ publishing {
             name = "GithubPackages"
             url = uri("https://maven.pkg.github.com/devVillar/demoLibrary")
             credentials {
-                username = providers.gradleProperty("gpr.user").toString()
-                password = providers.gradleProperty("gpr.key").toString()
+                username = System.getenv("USERNAME")
+                password = System.getenv("TOKEN_KEY")
             }
         }
 
