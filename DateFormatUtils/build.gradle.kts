@@ -102,8 +102,8 @@ publishing {
             name = "GithubPackages"
             url = uri("https://maven.pkg.github.com/devVillar/demoLibrary")
             credentials {
-                username = project.properties["gpr.user"].toString()
-                password = project.properties["gpr.key"].toString()
+                username = project.property("gpr.user").toString()
+                password = project.property("gpr.key").toString()
             }
         }
 
