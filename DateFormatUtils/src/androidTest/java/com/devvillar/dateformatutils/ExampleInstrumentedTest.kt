@@ -1,4 +1,4 @@
-package com.devvillar.demolibrary
+package com.devvillar.dateformatutils
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.devvillar.demolibrary", appContext.packageName)
+        assertEquals("com.devvillar.dateformatutils.test", appContext.packageName)
     }
 }

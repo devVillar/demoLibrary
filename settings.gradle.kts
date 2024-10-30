@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Demo Library"
 include(":app")
+include(":DateFormatUtils")

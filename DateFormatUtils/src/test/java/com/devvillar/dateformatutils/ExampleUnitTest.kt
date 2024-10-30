@@ -1,4 +1,4 @@
-package com.devvillar.demolibrary
+package com.devvillar.dateformatutils
 
 import org.junit.Test
 
