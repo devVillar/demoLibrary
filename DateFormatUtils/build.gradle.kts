@@ -44,7 +44,6 @@ android {
 }
 
 dependencies {
-    implementation("io.github.devvillar:dateutils:1.0.1")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -103,8 +102,8 @@ publishing {
             name = "GithubPackages"
             url = uri("https://maven.pkg.github.com/devVillar/demoLibrary")
             credentials {
-                username = project.findProperty("gpr.user").toString()
-                password = project.findProperty("gpr.key").toString()
+                username = project.properties["gpr.user"].toString()
+                password = project.properties["gpr.key"].toString()
             }
         }
 

@@ -38,7 +38,6 @@ android {
 
 dependencies {
 
-    implementation("io.github.devvillar:dateutils:1.0.1")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
