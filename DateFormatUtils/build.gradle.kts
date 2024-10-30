@@ -1,3 +1,15 @@
+import java.util.Properties
+
+val properties = Properties().apply {
+    load(file("../config.properties").inputStream())
+}
+
+val userName: String = properties.getProperty("USERNAME") ?: ""
+val tokenKey: String = properties.getProperty("TOKEN_KEY") ?: ""
+
+println(": $userName, : $tokenKey")
+
+
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
@@ -103,8 +115,8 @@ publishing {
             name = "GithubPackages"
             url = uri("https://maven.pkg.github.com/devVillar/demoLibrary")
             credentials {
-                username = System.getenv("USERNAME")
-                password = System.getenv("TOKEN_KEY")
+                this.username = userName
+                this.password = tokenKey
             }
         }
 
